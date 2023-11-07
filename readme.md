@@ -25,14 +25,9 @@ raiz, como o primeiro nível hierárquico.
 1. Posicione-se em seu diretório de trabalho e crie os arquivos “exemplo1” e “exemplo2” uti-
 lizando comandos diferentes em cada caso. Ao criar um dos arquivos, entre com algumas
 
-linhas de dados pelo teclado.
+---
 
-2. Faça com que o arquivo vazio fique igual ao arquivo com conteúdo.
-
-
-
-	1. 
-
+Resposta linhas de comando:
 ~~~bash
 	mkdir diretorioDeTrabalho
 	cd diretorioDeTrabalho
@@ -40,4 +35,8 @@ linhas de dados pelo teclado.
 	touch exemplo2
 ~~~
 
+Resultado dos códigos acima. Observa-se com o cat o exemplo1 com o conteúdo escrito __teste1__ e o exemplo2 está vazio.
+
 ![print do resultado do código](assets/3.2%20p.61%20N1.jpg)
+
+2. Faça com que o arquivo vazio fique igual ao arquivo com conteúdo.
