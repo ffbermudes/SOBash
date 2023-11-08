@@ -1,4 +1,4 @@
-# Sistemas operacionais
+# Sistemas operacionais AOP 2
 
 ## Capítulo 3: Organização do Linux
 
@@ -76,3 +76,65 @@ sudo cp exemplo1 exemplo2 /home/temp/exemplos
 ~~~
 
 ![print do resultado do código](assets/3.3%20p.61%20N4.jpg)
+
+### Atividade 3.4 - Empacotando e compactando arquivos
+
+5. Entre no diretório temp/exemplos. Empacote e compacte os arquivos criados anteriormente num arquivo chamado “exemplos.tar.gz”. Use um único comando para efetuar esta operação.
+
+>resposta:
+~~~bash
+cd /home/temp/
+sudo tar -cvf exemplos.tar exemplos/
+sudo gzip exemplos.tar
+~~~
+
+### Atividade 3.5 - Removendo arquivos e diretórios
+
+1. Após o término das atividades, volte à situação original e remova todos os elementos criados
+
+> resposta:
+
+~~~bash
+cd home/
+rm -rf /temp
+rm -rf /home/ambientedev/uvv/sistemasOperacionais/diretorioDeTrabalho/
+~~~
+
+todas as pastas removidas como solicitado segue as imagens da remoção
+
+![print do resultado do código](assets/3.5%20N1.jpg)
+
+![print do resultado do código](assets/3.5%20N1%20img2.jpg)
+
+## Capítulo 4
+
+### Exercício de fixação 1 - comando sort
+
+1. Qual a utilidade do comando sort?
+> resposta:
+
+Ordenar o conteúdo de um arquivo de acordo com a necessidade. A ordenação pode ser numérica crescente ou decrescente ou alfabética.
+
+2. Através da página de manual do comando, encontre a opção que organiza o arquivo com
+base nas colunas.
+
+> resposta:
+Utilizando o sort também podemos ordenar em colunas basta utilizarmos o parâmetro __-k__ seguido da quantidade de colunas um número inteiro segue abaixo o exemplo:
+
+~~~bash
+sort -k 2 arquivo.txt
+~~~
+
+3. Pesquise três opções do comando sort.
+
+	* `sort -b ` ignora espaços em branco no inicio e no final das linhas.
+	![sort -b imagem](assets/4%20p.68%20N3.jpg)
+
+	* `sort -f ` ignora a diferença entre letras maiusculas e minusculas
+	![sort -b imagem](assets/4%20p.68%20N3%20img2.jpg)
+
+	* `sort -i` espaços em branco quebra de linhas tabulações e outros são ignorados na hora de imprimir na tela os dados.
+		![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços.jpg)
+		sem ordenação arquivo
+		![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços.jpg)
+		Ordenado, pode-se ver que foi ignorado as tabulações e espaços.
