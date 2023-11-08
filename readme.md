@@ -128,7 +128,7 @@ sort -k 2 arquivo.txt
 3. Pesquise três opções do comando sort.
 
 	* `sort -b ` ignora espaços em branco no inicio e no final das linhas.
-	
+
 	![sort -b imagem](assets/4%20p.68%20N3.jpg)
 
 	* `sort -f ` ignora a diferença entre letras maiusculas e minusculas
@@ -141,6 +141,6 @@ sort -k 2 arquivo.txt
 
 	sem ordenação arquivo
 	
-	![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços.jpg)
+	![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços%20ORDENADO.jpg)
 
 	Ordenado, pode-se ver que foi ignorado as tabulações e espaços.
