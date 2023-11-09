@@ -108,7 +108,7 @@ todas as pastas removidas como solicitado segue as imagens da remoção
 
 ## Capítulo 4
 
-### Exercício de fixação 1 - comando sort
+### Exercício de fixação 1 - comando sort (p.68)
 
 1. Qual a utilidade do comando sort?
 > resposta:
@@ -127,20 +127,73 @@ sort -k 2 arquivo.txt
 
 3. Pesquise três opções do comando sort.
 
-	* `sort -b ` ignora espaços em branco no inicio e no final das linhas.
+* `sort -b ` ignora espaços em branco no inicio e no final das linhas.
 
-	![sort -b imagem](assets/4%20p.68%20N3.jpg)
+![sort -b imagem](assets/4%20p.68%20N3.jpg)
 
-	* `sort -f ` ignora a diferença entre letras maiusculas e minusculas
+* `sort -f ` ignora a diferença entre letras maiusculas e minusculas
 
-	![sort -b imagem](assets/4%20p.68%20N3%20img2.jpg)
+![sort -b imagem](assets/4%20p.68%20N3%20img2.jpg)
 
-	* `sort -i` espaços em branco quebra de linhas tabulações e outros são ignorados na hora de imprimir na tela os dados.
+* `sort -i` espaços em branco quebra de linhas tabulações e outros são ignorados na hora de imprimir na tela os dados.
 
-	![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços.jpg)
+![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços.jpg)
 
-	sem ordenação arquivo
-	
-	![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços%20ORDENADO.jpg)
+sem ordenação arquivo
 
-	Ordenado, pode-se ver que foi ignorado as tabulações e espaços.
+![sort -b imagem](assets/arquivo%20com%20tabulações%20e%20espaços%20ORDENADO.jpg)
+
+Ordenado, pode-se ver que foi ignorado as tabulações e espaços.
+
+### Atividade 4.1 - Pesquisando em arquivos
+
+1. Copie ou crie o arquivo atividade, contendo as seguintes linhas:
+
+	```
+		abcdefghijklmUnixnopqrstuvwxyz
+		abcdefghiUnixjklmnopqrstuvwxyzUnix
+		abcdefghijklmnopqrstuvwxyzLinux
+		abcdefghijklmnopqrstuUnixvwxyz
+		Unixabcdefghijklmnopqrstuvwxyz
+		abcdefghijklmnopqrstuvwxyzUnix
+		abcdefghijklmnopLinuxqrstuvwxyz
+		abcdefghUnixijklmnopqrstuUnixvwxyz
+	```
+	Supondo que você não conheça o conteúdo do arquivo, mas imagina que deveria haver a
+	palavra Unix em todas as suas linhas, utilize uma linha de comando para mostrar na tela as
+	linhas, com seus respectivos números, nas quais está faltando a palavra Unix; salve esse
+	resultado no arquivo chamado atividade_temp.
+
+	>resposta:
+	~~~bash
+	grep -n -v 'Unix' atividade > atividade_temp
+	~~~
+	![sort -b imagem](assets/4.1%20N1.jpg)
+
+### Atividade 4.2 - Contabilizando arquivos
+
+Utilizando o comando grep, encontre mais de uma forma de mostrar na tela o número de linhas
+em que a palavra Unix aparece pelo menos uma vez no arquivo atividade (não mostrar as linhas).
+>resposta:
+
+![sort -b imagem](assets/4.2%20n1.jpg)
+![sort -b imagem](assets/4.2%20N2.jpg)
+
+### Atividade 4.3 – Controlando a exibição do conteúdo de arquivos
+
+Utilizando uma canalização, liste na tela do monitor a terceira e a quarta linhas do
+arquivo atividade.
+
+~~~bash
+head -n 3 arquivo.txt | tail -n 2
+~~~
+![sort -b imagem](assets/4.2%20N3.jpg)
+
+### Atividade 4.4 – Combinando comandos para criar novas funcionalidades
+Utilizando o arquivo clientes, crie um comando utilizando os conceitos de canalização e
+redirecionamento que execute passo a passo a mesma função do comando abaixo:
+
+~~~bash
+cat clientes | grep -E '^[0-9]' | sort -n
+~~~
+![sort -b imagem](assets/4.4.jpg)
