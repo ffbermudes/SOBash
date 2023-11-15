@@ -4,5 +4,4 @@ abcdefghijklmnopqrstuvwxyzLinux
 abcdefghijklmnopqrstuUnixvwxyz
 Unixabcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyzUnix
-abcdefghijklmnopLinuxqrstuvwxyz
 abcdefghUnixijklmnopqrstuUnixvwxyz

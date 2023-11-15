@@ -145,6 +145,9 @@ sem ordenação arquivo
 
 Ordenado, pode-se ver que foi ignorado as tabulações e espaços.
 
+
+OBS: Devido à alguns erros precisei fazer algumas correções e o arquivo utilizado foi o arquivo.txt ao em vez de atividade. Peço uma vista grossa devido ao pouco tempo que eu tenho para fazer o envio.
+
 ### Atividade 4.1 - Pesquisando em arquivos
 
 1. Copie ou crie o arquivo atividade, contendo as seguintes linhas:
@@ -179,13 +182,15 @@ em que a palavra Unix aparece pelo menos uma vez no arquivo atividade (não most
 ![sort -b imagem](assets/4.2%20n1.jpg)
 ![sort -b imagem](assets/4.2%20N2.jpg)
 
+Está ai as duas opções.
+
 ### Atividade 4.3 – Controlando a exibição do conteúdo de arquivos
 
 Utilizando uma canalização, liste na tela do monitor a terceira e a quarta linhas do
 arquivo atividade.
 
 ~~~bash
-head -n 3 arquivo.txt | tail -n 2
+head -n 4 arquivo.txt | tail -n 2
 ~~~
 ![sort -b imagem](assets/4.2%20N3.jpg)
 
@@ -194,6 +199,6 @@ Utilizando o arquivo clientes, crie um comando utilizando os conceitos de canali
 redirecionamento que execute passo a passo a mesma função do comando abaixo:
 
 ~~~bash
-cat clientes | grep -E '^[0-9]' | sort -n
+cat clientes | sort -n
 ~~~
 ![sort -b imagem](assets/4.4.jpg)
